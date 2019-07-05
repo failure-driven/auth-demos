@@ -19,6 +19,13 @@ rails server
 
 ## Rails & Devise
 
+```sh
+# add devise gem
+rails generate devise:install
+rails generate devise User
+rails db:migrate
+```
+
 ## Rails & Clearnace
 
 ## Extend to React
