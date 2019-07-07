@@ -30,6 +30,10 @@ rails db:migrate
 
 ## Extend to React
 
+```sh
+rails webpacker:install:react
+```
+
 ## Authorizationn from scratch
 
 ## JWT and an Auth service
