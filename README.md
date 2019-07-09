@@ -28,6 +28,15 @@ rails db:migrate
 
 ## Rails & Clearnace
 
+```sh
+# add clearance gem
+rails generate clearance:install
+rails db:migrate                                                                                                                                                            
+
+# set a remember token for any previously created users
+User.all.each(&:reset_remember_token!)
+``` 
+
 ## Extend to React
 
 ```sh
