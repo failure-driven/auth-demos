@@ -11,8 +11,8 @@
 
   <body>
     <%= link_to('Home', root_path) %>
-    <% if user_signed_in? %>
-      <%= link_to('Devise Logout', destroy_user_session_path, method: :delete) %>        
+    <% if defined?(Devise) && user_signed_in? %>
+      <%= link_to('Devise Logout', destroy_user_session_path, method: :delete) %>
     <% end %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

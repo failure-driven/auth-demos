@@ -1,4 +1,6 @@
 <ul>
-<li><a href="/auth_with_devise/">auth with Devise</a></li>
-<li><a href="/auth_with_devise/react" data-turbolinks="false">auth with Devise in react</a></li>
+  <% if defined?(Devise) %>
+    <li><a href="/auth_with_devise/">auth with Devise</a></li>
+    <li><a href="/auth_with_devise/react" data-turbolinks="false">auth with Devise in react</a></li>
+  <% end %>
 </ul>

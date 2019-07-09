@@ -1,3 +1,5 @@
 class AuthWithDeviseController < ApplicationController
-  before_action :authenticate_user!
+  if defined? Devise
+    before_action :authenticate_user!
+  end
 end
